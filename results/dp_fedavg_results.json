@@ -1,0 +1,112 @@
+{
+    "algorithm": "dp_fedavg",
+    "rounds": [
+        {
+            "round": 1,
+            "global_accuracy": 0.9065,
+            "avg_client_accuracy": 0.8984833333333333,
+            "round_time": 21.67334294319153
+        },
+        {
+            "round": 2,
+            "global_accuracy": 0.9207,
+            "avg_client_accuracy": 0.9065333333333333,
+            "round_time": 21.564059257507324
+        },
+        {
+            "round": 3,
+            "global_accuracy": 0.9224,
+            "avg_client_accuracy": 0.9034333333333333,
+            "round_time": 21.877038717269897
+        },
+        {
+            "round": 4,
+            "global_accuracy": 0.9256,
+            "avg_client_accuracy": 0.9101333333333332,
+            "round_time": 21.341272115707397
+        },
+        {
+            "round": 5,
+            "global_accuracy": 0.9181,
+            "avg_client_accuracy": 0.9047166666666666,
+            "round_time": 21.100605964660645
+        },
+        {
+            "round": 6,
+            "global_accuracy": 0.9249,
+            "avg_client_accuracy": 0.9053333333333333,
+            "round_time": 21.532400131225586
+        },
+        {
+            "round": 7,
+            "global_accuracy": 0.9246,
+            "avg_client_accuracy": 0.9145166666666666,
+            "round_time": 22.076355695724487
+        },
+        {
+            "round": 8,
+            "global_accuracy": 0.9236,
+            "avg_client_accuracy": 0.916,
+            "round_time": 21.864714860916138
+        },
+        {
+            "round": 9,
+            "global_accuracy": 0.924,
+            "avg_client_accuracy": 0.9121666666666666,
+            "round_time": 21.964388132095337
+        },
+        {
+            "round": 10,
+            "global_accuracy": 0.925,
+            "avg_client_accuracy": 0.9075333333333333,
+            "round_time": 166.53640818595886
+        }
+    ],
+    "final_accuracy": 0.925,
+    "training_time": 361.531759,
+    "system_metrics": {
+        "accuracy": {
+            "final": 0.925,
+            "avg": 0.92154,
+            "max": 0.9256
+        },
+        "system_performance": {
+            "communication_overhead": {
+                "avg": 0.4833984375,
+                "max": 0.8466796875,
+                "min": 0.3974609375
+            },
+            "latency": {
+                "avg": 36152.865624427795,
+                "max": 166536.2479686737,
+                "min": 21100.42405128479
+            },
+            "throughput": {
+                "avg": 0.21074207849749413,
+                "max": 0.23696206236649323,
+                "min": 0.03002349374978428
+            },
+            "cpu_usage": {
+                "avg": 54.339999999999996,
+                "max": 57.4,
+                "min": 51.5
+            },
+            "memory_usage": {
+                "avg": 404.2453125,
+                "max": 405.140625,
+                "min": 403.8125
+            },
+            "bandwidth_utilization": {
+                "avg": 0.018919886867371068,
+                "max": 0.024060460835664387,
+                "min": 0.005084056461145112
+            },
+            "round_duration": {
+                "avg": 36.1528656244278,
+                "max": 166.5362479686737,
+                "min": 21.10042405128479
+            }
+        },
+        "total_time": 361.5567169189453
+    }
+}

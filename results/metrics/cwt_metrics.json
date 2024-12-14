@@ -1,0 +1,266 @@
+{
+    "algorithm": "cwt",
+    "round_metrics": [
+        {
+            "round_number": 1,
+            "accuracy": 0.9406,
+            "training_time": 18.898361682891846,
+            "communication_overhead": 0.37890625,
+            "latency": 18898.361682891846,
+            "resource_usage": {
+                "cpu": 51.4,
+                "memory": 408.90625
+            },
+            "throughput": 0.2645731986665468,
+            "bandwidth_utilization": 0.02004968771144925
+        },
+        {
+            "round_number": 2,
+            "accuracy": 0.948,
+            "training_time": 19.23428201675415,
+            "communication_overhead": 0.3818359375,
+            "latency": 19234.28201675415,
+            "resource_usage": {
+                "cpu": 55.1,
+                "memory": 408.96875
+            },
+            "throughput": 0.2599525158071779,
+            "bandwidth_utilization": 0.019851842515743463
+        },
+        {
+            "round_number": 3,
+            "accuracy": 0.9597,
+            "training_time": 19.29604196548462,
+            "communication_overhead": 0.359375,
+            "latency": 19296.04196548462,
+            "resource_usage": {
+                "cpu": 54.0,
+                "memory": 408.96875
+            },
+            "throughput": 0.2591204978173059,
+            "bandwidth_utilization": 0.018624285780618862
+        },
+        {
+            "round_number": 4,
+            "accuracy": 0.9601,
+            "training_time": 19.34143900871277,
+            "communication_overhead": 0.521484375,
+            "latency": 19341.43900871277,
+            "resource_usage": {
+                "cpu": 53.9,
+                "memory": 408.984375
+            },
+            "throughput": 0.2585123060258155,
+            "bandwidth_utilization": 0.02696202566753622
+        },
+        {
+            "round_number": 5,
+            "accuracy": 0.966,
+            "training_time": 19.234381198883057,
+            "communication_overhead": 0.3662109375,
+            "latency": 19234.381198883057,
+            "resource_usage": {
+                "cpu": 51.4,
+                "memory": 409.375
+            },
+            "throughput": 0.259951175361459,
+            "bandwidth_utilization": 0.019039392726669362
+        },
+        {
+            "round_number": 6,
+            "accuracy": 0.9674,
+            "training_time": 19.271533966064453,
+            "communication_overhead": 0.40625,
+            "latency": 19271.533966064453,
+            "resource_usage": {
+                "cpu": 52.0,
+                "memory": 409.375
+            },
+            "throughput": 0.25945002659386524,
+            "bandwidth_utilization": 0.021080314660751553
+        },
+        {
+            "round_number": 7,
+            "accuracy": 0.9664,
+            "training_time": 19.441904067993164,
+            "communication_overhead": 0.3798828125,
+            "latency": 19441.904067993164,
+            "resource_usage": {
+                "cpu": 55.1,
+                "memory": 409.40625
+            },
+            "throughput": 0.2571764567150295,
+            "bandwidth_utilization": 0.019539383137137985
+        },
+        {
+            "round_number": 8,
+            "accuracy": 0.9686,
+            "training_time": 19.40927529335022,
+            "communication_overhead": 0.4150390625,
+            "latency": 19409.27529335022,
+            "resource_usage": {
+                "cpu": 53.0,
+                "memory": 404.921875
+            },
+            "throughput": 0.2576087939621858,
+            "bandwidth_utilization": 0.02138354246756425
+        },
+        {
+            "round_number": 9,
+            "accuracy": 0.969,
+            "training_time": 19.04497194290161,
+            "communication_overhead": 0.380859375,
+            "latency": 19044.97194290161,
+            "resource_usage": {
+                "cpu": 52.7,
+                "memory": 404.921875
+            },
+            "throughput": 0.262536485482384,
+            "bandwidth_utilization": 0.019997896355103472
+        },
+        {
+            "round_number": 10,
+            "accuracy": 0.9715,
+            "training_time": 19.0944721698761,
+            "communication_overhead": 0.396484375,
+            "latency": 19094.4721698761,
+            "resource_usage": {
+                "cpu": 51.2,
+                "memory": 404.921875
+            },
+            "throughput": 0.26185588978406643,
+            "bandwidth_utilization": 0.020764353760220896
+        }
+    ],
+    "summary": {
+        "accuracy": {
+            "final": 0.9715,
+            "avg": 0.96173,
+            "max": 0.9715
+        },
+        "system_performance": {
+            "communication_overhead": {
+                "avg": 0.3986328125,
+                "max": 0.521484375,
+                "min": 0.359375
+            },
+            "latency": {
+                "avg": 19226.6663312912,
+                "max": 19441.904067993164,
+                "min": 18898.361682891846
+            },
+            "throughput": {
+                "avg": 0.2600737346215836,
+                "max": 0.2645731986665468,
+                "min": 0.2571764567150295
+            },
+            "cpu_usage": {
+                "avg": 52.98,
+                "max": 55.1,
+                "min": 51.2
+            },
+            "memory_usage": {
+                "avg": 407.875,
+                "max": 409.40625,
+                "min": 404.921875
+            },
+            "bandwidth_utilization": {
+                "avg": 0.02072927247827953,
+                "max": 0.02696202566753622,
+                "min": 0.018624285780618862
+            },
+            "round_duration": {
+                "avg": 19.2266663312912,
+                "max": 19.441904067993164,
+                "min": 18.898361682891846
+            }
+        },
+        "total_time": 192.29369115829468
+    },
+    "system_metrics": {
+        "communication_overhead": [
+            0.37890625,
+            0.3818359375,
+            0.359375,
+            0.521484375,
+            0.3662109375,
+            0.40625,
+            0.3798828125,
+            0.4150390625,
+            0.380859375,
+            0.396484375
+        ],
+        "latency": [
+            18898.361682891846,
+            19234.28201675415,
+            19296.04196548462,
+            19341.43900871277,
+            19234.381198883057,
+            19271.533966064453,
+            19441.904067993164,
+            19409.27529335022,
+            19044.97194290161,
+            19094.4721698761
+        ],
+        "throughput": [
+            0.2645731986665468,
+            0.2599525158071779,
+            0.2591204978173059,
+            0.2585123060258155,
+            0.259951175361459,
+            0.25945002659386524,
+            0.2571764567150295,
+            0.2576087939621858,
+            0.262536485482384,
+            0.26185588978406643
+        ],
+        "cpu_usage": [
+            51.4,
+            55.1,
+            54.0,
+            53.9,
+            51.4,
+            52.0,
+            55.1,
+            53.0,
+            52.7,
+            51.2
+        ],
+        "memory_usage": [
+            408.90625,
+            408.96875,
+            408.96875,
+            408.984375,
+            409.375,
+            409.375,
+            409.40625,
+            404.921875,
+            404.921875,
+            404.921875
+        ],
+        "bandwidth_utilization": [
+            0.02004968771144925,
+            0.019851842515743463,
+            0.018624285780618862,
+            0.02696202566753622,
+            0.019039392726669362,
+            0.021080314660751553,
+            0.019539383137137985,
+            0.02138354246756425,
+            0.019997896355103472,
+            0.020764353760220896
+        ],
+        "round_duration": [
+            18.898361682891846,
+            19.23428201675415,
+            19.29604196548462,
+            19.34143900871277,
+            19.234381198883057,
+            19.271533966064453,
+            19.441904067993164,
+            19.40927529335022,
+            19.04497194290161,
+            19.0944721698761
+        ]
+    }
+}
