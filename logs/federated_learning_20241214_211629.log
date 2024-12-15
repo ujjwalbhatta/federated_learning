@@ -1,0 +1,131 @@
+2024-12-14 21:16:29,668 - INFO - Starting experiments...
+2024-12-14 21:16:29,668 - INFO - Starting experiment with fedavg
+2024-12-14 21:16:29,668 - INFO - Initializing experiment with fedavg
+2024-12-14 21:16:29,668 - INFO - Using device: cpu
+2024-12-14 21:16:29,668 - INFO - Initializing global model
+2024-12-14 21:16:29,674 - INFO - Testing scalability...
+2024-12-14 21:16:30,688 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:16:30,688 - INFO - Loading and preparing data
+2024-12-14 21:16:30,736 - INFO - Data loaded successfully. Number of clients: 2
+2024-12-14 21:16:30,736 - INFO - Initializing clients
+2024-12-14 21:16:30,737 - INFO - Initialized 2 clients successfully
+2024-12-14 21:16:30,737 - INFO - 
+Starting round 1/2
+2024-12-14 21:16:30,737 - INFO - Training client 1/2 in round 1
+2024-12-14 21:16:38,030 - INFO - Round 1, Client 1 training completed. Accuracy: 0.9639, Time: 6.20s
+2024-12-14 21:16:38,030 - INFO - Training client 2/2 in round 1
+2024-12-14 21:16:45,574 - INFO - Round 1, Client 2 training completed. Accuracy: 0.9597, Time: 6.42s
+2024-12-14 21:16:45,574 - INFO - Aggregating models for round 1
+2024-12-14 21:16:45,939 - INFO - Round 1 completed. Global accuracy: 0.9468, Time: 15.20s
+2024-12-14 21:16:45,939 - INFO - 
+Starting round 2/2
+2024-12-14 21:16:45,939 - INFO - Simulating network partition...
+2024-12-14 21:16:46,447 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:16:46,447 - INFO - Training client 1/2 in round 2
+2024-12-14 21:16:54,083 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9702, Time: 6.50s
+2024-12-14 21:16:54,083 - INFO - Training client 2/2 in round 2
+2024-12-14 21:17:01,840 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9743, Time: 6.61s
+2024-12-14 21:17:01,840 - INFO - Aggregating models for round 2
+2024-12-14 21:17:02,220 - INFO - Round 2 completed. Global accuracy: 0.9678, Time: 16.28s
+2024-12-14 21:17:02,221 - INFO - Experiment with fedavg completed successfully
+2024-12-14 21:17:02,222 - INFO - Total training time: 31.48s
+2024-12-14 21:17:02,222 - INFO - Final accuracy: 0.9678
+2024-12-14 21:17:02,223 - INFO - Completed experiment with fedavg
+2024-12-14 21:17:02,223 - INFO - Starting experiment with fedprox
+2024-12-14 21:17:02,223 - INFO - Initializing experiment with fedprox
+2024-12-14 21:17:02,223 - INFO - Using device: cpu
+2024-12-14 21:17:02,223 - INFO - Initializing global model
+2024-12-14 21:17:02,223 - INFO - Testing scalability...
+2024-12-14 21:17:03,238 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:17:03,239 - INFO - Loading and preparing data
+2024-12-14 21:17:03,263 - INFO - Data loaded successfully. Number of clients: 2
+2024-12-14 21:17:03,263 - INFO - Initializing clients
+2024-12-14 21:17:03,264 - INFO - Initialized 2 clients successfully
+2024-12-14 21:17:03,264 - INFO - 
+Starting round 1/2
+2024-12-14 21:17:03,264 - INFO - Training client 1/2 in round 1
+2024-12-14 21:17:12,225 - INFO - Round 1, Client 1 training completed. Accuracy: 0.9196, Time: 7.81s
+2024-12-14 21:17:12,225 - INFO - Training client 2/2 in round 1
+2024-12-14 21:17:21,355 - INFO - Round 1, Client 2 training completed. Accuracy: 0.9395, Time: 7.98s
+2024-12-14 21:17:21,355 - INFO - Aggregating models for round 1
+2024-12-14 21:17:21,752 - INFO - Round 1 completed. Global accuracy: 0.9390, Time: 18.49s
+2024-12-14 21:17:21,752 - INFO - 
+Starting round 2/2
+2024-12-14 21:17:21,752 - INFO - Simulating network partition...
+2024-12-14 21:17:22,258 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:17:22,258 - INFO - Training client 1/2 in round 2
+2024-12-14 21:17:32,024 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9446, Time: 8.44s
+2024-12-14 21:17:32,025 - INFO - Training client 2/2 in round 2
+2024-12-14 21:17:43,201 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9399, Time: 9.68s
+2024-12-14 21:17:43,202 - INFO - Aggregating models for round 2
+2024-12-14 21:17:43,702 - INFO - Round 2 completed. Global accuracy: 0.9525, Time: 21.95s
+2024-12-14 21:17:43,704 - INFO - Experiment with fedprox completed successfully
+2024-12-14 21:17:43,704 - INFO - Total training time: 40.44s
+2024-12-14 21:17:43,704 - INFO - Final accuracy: 0.9525
+2024-12-14 21:17:43,705 - INFO - Completed experiment with fedprox
+2024-12-14 21:17:43,705 - INFO - Starting experiment with cwt
+2024-12-14 21:17:43,705 - INFO - Initializing experiment with cwt
+2024-12-14 21:17:43,705 - INFO - Using device: cpu
+2024-12-14 21:17:43,705 - INFO - Initializing global model
+2024-12-14 21:17:43,706 - INFO - Testing scalability...
+2024-12-14 21:17:44,721 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:17:44,721 - INFO - Loading and preparing data
+2024-12-14 21:17:44,747 - INFO - Data loaded successfully. Number of clients: 2
+2024-12-14 21:17:44,747 - INFO - Initializing clients
+2024-12-14 21:17:44,748 - INFO - Initialized 2 clients successfully
+2024-12-14 21:17:44,748 - INFO - 
+Starting round 1/2
+2024-12-14 21:17:44,748 - INFO - Training client 1/2 in round 1
+2024-12-14 21:17:55,851 - INFO - Round 1, Client 1 training completed. Accuracy: 0.9635, Time: 9.34s
+2024-12-14 21:17:55,851 - INFO - Training client 2/2 in round 1
+2024-12-14 21:18:08,887 - INFO - Round 1, Client 2 training completed. Accuracy: 0.9590, Time: 11.07s
+2024-12-14 21:18:08,887 - INFO - Aggregating models for round 1
+2024-12-14 21:18:09,541 - INFO - Round 1 completed. Global accuracy: 0.9555, Time: 24.79s
+2024-12-14 21:18:09,541 - INFO - 
+Starting round 2/2
+2024-12-14 21:18:09,541 - INFO - Simulating network partition...
+2024-12-14 21:18:10,047 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:18:10,047 - INFO - Training client 1/2 in round 2
+2024-12-14 21:18:23,376 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9744, Time: 11.41s
+2024-12-14 21:18:23,376 - INFO - Training client 2/2 in round 2
+2024-12-14 21:18:36,227 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9744, Time: 10.98s
+2024-12-14 21:18:36,227 - INFO - Aggregating models for round 2
+2024-12-14 21:18:36,838 - INFO - Round 2 completed. Global accuracy: 0.9665, Time: 27.30s
+2024-12-14 21:18:36,839 - INFO - Experiment with cwt completed successfully
+2024-12-14 21:18:36,839 - INFO - Total training time: 52.09s
+2024-12-14 21:18:36,839 - INFO - Final accuracy: 0.9665
+2024-12-14 21:18:36,840 - INFO - Completed experiment with cwt
+2024-12-14 21:18:36,840 - INFO - Starting experiment with dp_fedavg
+2024-12-14 21:18:36,841 - INFO - Initializing experiment with dp_fedavg
+2024-12-14 21:18:36,841 - INFO - Using device: cpu
+2024-12-14 21:18:36,841 - INFO - Initializing global model
+2024-12-14 21:18:36,841 - INFO - Testing scalability...
+2024-12-14 21:18:37,856 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:18:37,857 - INFO - Loading and preparing data
+2024-12-14 21:18:37,881 - INFO - Data loaded successfully. Number of clients: 2
+2024-12-14 21:18:37,881 - INFO - Initializing clients
+2024-12-14 21:18:37,882 - INFO - Initialized 2 clients successfully
+2024-12-14 21:18:37,882 - INFO - 
+Starting round 1/2
+2024-12-14 21:18:37,882 - INFO - Training client 1/2 in round 1
+2024-12-14 21:18:51,033 - INFO - Round 1, Client 1 training completed. Accuracy: 0.8989, Time: 11.41s
+2024-12-14 21:18:51,033 - INFO - Training client 2/2 in round 1
+2024-12-14 21:19:03,972 - INFO - Round 1, Client 2 training completed. Accuracy: 0.8957, Time: 11.28s
+2024-12-14 21:19:03,972 - INFO - Aggregating models for round 1
+2024-12-14 21:19:04,517 - INFO - Round 1 completed. Global accuracy: 0.9082, Time: 26.63s
+2024-12-14 21:19:04,518 - INFO - 
+Starting round 2/2
+2024-12-14 21:19:04,518 - INFO - Simulating network partition...
+2024-12-14 21:19:05,023 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:19:05,023 - INFO - Training client 1/2 in round 2
+2024-12-14 21:19:17,288 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9071, Time: 10.65s
+2024-12-14 21:19:17,288 - INFO - Training client 2/2 in round 2
+2024-12-14 21:19:29,321 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9063, Time: 10.48s
+2024-12-14 21:19:29,321 - INFO - Aggregating models for round 2
+2024-12-14 21:19:29,830 - INFO - Round 2 completed. Global accuracy: 0.9184, Time: 25.31s
+2024-12-14 21:19:29,831 - INFO - Experiment with dp_fedavg completed successfully
+2024-12-14 21:19:29,831 - INFO - Total training time: 51.95s
+2024-12-14 21:19:29,831 - INFO - Final accuracy: 0.9184
+2024-12-14 21:19:29,832 - INFO - Completed experiment with dp_fedavg
+2024-12-14 21:19:32,197 - WARNING - No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+2024-12-14 21:19:33,409 - INFO - All experiments completed successfully

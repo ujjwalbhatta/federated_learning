@@ -1,0 +1,294 @@
+{
+    "rounds": [
+        {
+            "round": 1,
+            "global_accuracy": 0.9417,
+            "round_time": 23.198251962661743,
+            "consistency_score": 0.9687634741576724,
+            "system_metrics": {
+                "communication_overhead": 0.474609375,
+                "latency": 23198.251962661743,
+                "throughput": 0.21553348105916104,
+                "resource_usage": {
+                    "cpu": 63.9,
+                    "memory": 377.53125
+                },
+                "bandwidth_utilization": 0.020458842147412552
+            }
+        },
+        {
+            "round": 2,
+            "global_accuracy": 0.9482,
+            "round_time": 23.753164052963257,
+            "consistency_score": 0.9794955881324552,
+            "system_metrics": {
+                "communication_overhead": 0.4345703125,
+                "latency": 23753.164052963257,
+                "throughput": 0.21049827251861378,
+                "resource_usage": {
+                    "cpu": 63.6,
+                    "memory": 377.59375
+                },
+                "bandwidth_utilization": 0.01829526001382483
+            }
+        },
+        {
+            "round": 3,
+            "global_accuracy": 0.9613,
+            "round_time": 23.114734172821045,
+            "consistency_score": 0.9811298482674992,
+            "system_metrics": {
+                "communication_overhead": 0.537109375,
+                "latency": 23114.734172821045,
+                "throughput": 0.21631224320455913,
+                "resource_usage": {
+                    "cpu": 53.3,
+                    "memory": 377.671875
+                },
+                "bandwidth_utilization": 0.02323666675048975
+            }
+        },
+        {
+            "round": 4,
+            "global_accuracy": 0.963,
+            "round_time": 23.240328788757324,
+            "consistency_score": 0.9809786349084164,
+            "system_metrics": {
+                "communication_overhead": 0.44140625,
+                "latency": 23240.328788757324,
+                "throughput": 0.2151432557365017,
+                "resource_usage": {
+                    "cpu": 52.5,
+                    "memory": 377.703125
+                },
+                "bandwidth_utilization": 0.01899311554548804
+            }
+        },
+        {
+            "round": 5,
+            "global_accuracy": 0.9662,
+            "round_time": 23.467796087265015,
+            "consistency_score": 0.9824016714078312,
+            "system_metrics": {
+                "communication_overhead": 0.7333984375,
+                "latency": 23467.796087265015,
+                "throughput": 0.21305792761312126,
+                "resource_usage": {
+                    "cpu": 52.8,
+                    "memory": 377.703125
+                },
+                "bandwidth_utilization": 0.03125127024169025
+            }
+        },
+        {
+            "round": 6,
+            "global_accuracy": 0.9654,
+            "round_time": 23.762377977371216,
+            "consistency_score": 0.9812214639793805,
+            "system_metrics": {
+                "communication_overhead": 0.5771484375,
+                "latency": 23762.377977371216,
+                "throughput": 0.2104166512611437,
+                "resource_usage": {
+                    "cpu": 52.7,
+                    "memory": 377.765625
+                },
+                "bandwidth_utilization": 0.024288328299870297
+            }
+        },
+        {
+            "round": 7,
+            "global_accuracy": 0.9669,
+            "round_time": 22.749970197677612,
+            "consistency_score": 0.9834687071275927,
+            "system_metrics": {
+                "communication_overhead": 0.48046875,
+                "latency": 22749.970197677612,
+                "throughput": 0.219780507690969,
+                "resource_usage": {
+                    "cpu": 52.5,
+                    "memory": 377.765625
+                },
+                "bandwidth_utilization": 0.02111953316092905
+            }
+        },
+        {
+            "round": 8,
+            "global_accuracy": 0.9672,
+            "round_time": 22.842209100723267,
+            "consistency_score": 0.9832121730934724,
+            "system_metrics": {
+                "communication_overhead": 0.447265625,
+                "latency": 22842.209100723267,
+                "throughput": 0.21889301415429568,
+                "resource_usage": {
+                    "cpu": 51.8,
+                    "memory": 377.78125
+                },
+                "bandwidth_utilization": 0.019580664156770983
+            }
+        },
+        {
+            "round": 9,
+            "global_accuracy": 0.9731,
+            "round_time": 23.375605821609497,
+            "consistency_score": 0.9822929924636179,
+            "system_metrics": {
+                "communication_overhead": 0.4326171875,
+                "latency": 23375.605821609497,
+                "throughput": 0.2138981996084896,
+                "resource_usage": {
+                    "cpu": 58.6,
+                    "memory": 377.78125
+                },
+                "bandwidth_utilization": 0.018507207505187674
+            }
+        },
+        {
+            "round": 10,
+            "global_accuracy": 0.9728,
+            "round_time": 23.400866985321045,
+            "consistency_score": 0.9828059434892993,
+            "system_metrics": {
+                "communication_overhead": 0.525390625,
+                "latency": 23400.866985321045,
+                "throughput": 0.21366729716195612,
+                "resource_usage": {
+                    "cpu": 66.4,
+                    "memory": 377.78125
+                },
+                "bandwidth_utilization": 0.022451758959596172
+            }
+        }
+    ],
+    "final_accuracy": 0.9728,
+    "training_time": 233.98217487335205,
+    "system_metrics": {
+        "accuracy": {
+            "final": 0.9728,
+            "avg": 0.96258,
+            "max": 0.9731
+        },
+        "system_performance": {
+            "communication_overhead": {
+                "avg": 0.5083984375,
+                "max": 0.7333984375,
+                "min": 0.4326171875
+            },
+            "latency": {
+                "avg": 23290.530514717102,
+                "max": 23762.377977371216,
+                "min": 22749.970197677612
+            },
+            "throughput": {
+                "avg": 0.2147200850008811,
+                "max": 0.219780507690969,
+                "min": 0.2104166512611437
+            },
+            "cpu_usage": {
+                "avg": 56.81,
+                "max": 66.4,
+                "min": 51.8
+            },
+            "memory_usage": {
+                "avg": 377.7078125,
+                "max": 377.78125,
+                "min": 377.53125
+            },
+            "bandwidth_utilization": {
+                "avg": 0.021818264678125955,
+                "max": 0.03125127024169025,
+                "min": 0.01829526001382483
+            },
+            "round_duration": {
+                "avg": 23.2905305147171,
+                "max": 23.762377977371216,
+                "min": 22.749970197677612
+            }
+        }
+    },
+    "distributed_metrics": {
+        "scalability": [
+            {
+                "num_clients": 2,
+                "completion_time": 0.21001696586608887,
+                "throughput": 9.52304015893288
+            },
+            {
+                "num_clients": 3,
+                "completion_time": 0.31003403663635254,
+                "throughput": 9.676356933412388
+            },
+            {
+                "num_clients": 5,
+                "completion_time": 0.5100371837615967,
+                "throughput": 9.803206823322743
+            }
+        ],
+        "fault_tolerance": [],
+        "consistency": [
+            {
+                "max_divergence": 0.03330051281955093,
+                "avg_divergence": 0.03224370723667865,
+                "consistency_score": 0.9687634741576724
+            },
+            {
+                "max_divergence": 0.022229572796883684,
+                "avg_divergence": 0.020933643924460437,
+                "consistency_score": 0.9794955881324552
+            },
+            {
+                "max_divergence": 0.01957515797888239,
+                "avg_divergence": 0.019233082925590377,
+                "consistency_score": 0.9811298482674992
+            },
+            {
+                "max_divergence": 0.021424684033263475,
+                "avg_divergence": 0.019390193032450043,
+                "consistency_score": 0.9809786349084164
+            },
+            {
+                "max_divergence": 0.018575528850002836,
+                "avg_divergence": 0.017913577617340103,
+                "consistency_score": 0.9824016714078312
+            },
+            {
+                "max_divergence": 0.019917179616944242,
+                "avg_divergence": 0.019137918105116114,
+                "consistency_score": 0.9812214639793805
+            },
+            {
+                "max_divergence": 0.0176542477371792,
+                "avg_divergence": 0.016809170187722582,
+                "consistency_score": 0.9834687071275927
+            },
+            {
+                "max_divergence": 0.0184930507093668,
+                "avg_divergence": 0.017074470156027626,
+                "consistency_score": 0.9832121730934724
+            },
+            {
+                "max_divergence": 0.019382777002950508,
+                "avg_divergence": 0.018026197552292917,
+                "consistency_score": 0.9822929924636179
+            },
+            {
+                "max_divergence": 0.018788484934096534,
+                "avg_divergence": 0.017494864194304682,
+                "consistency_score": 0.9828059434892993
+            }
+        ],
+        "network_partition": {
+            "recovery_time": 0.5100347995758057,
+            "messages_lost": 0,
+            "consistency_violations": 3
+        },
+        "network_resilience": {
+            "partition_recovery": [
+                0.5100347995758057
+            ],
+            "message_delivery_rate": 100.0
+        }
+    },
+    "algorithm": "cwt"
+}

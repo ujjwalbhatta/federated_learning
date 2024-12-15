@@ -1,0 +1,627 @@
+2024-12-14 21:20:41,211 - INFO - Starting experiments...
+2024-12-14 21:20:41,211 - INFO - Starting experiment with fedavg
+2024-12-14 21:20:41,212 - INFO - Initializing experiment with fedavg
+2024-12-14 21:20:41,212 - INFO - Using device: cpu
+2024-12-14 21:20:41,212 - INFO - Initializing global model
+2024-12-14 21:20:41,212 - INFO - Testing scalability...
+2024-12-14 21:20:42,226 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:20:42,227 - INFO - Loading and preparing data
+2024-12-14 21:20:42,264 - INFO - Data loaded successfully. Number of clients: 5
+2024-12-14 21:20:42,264 - INFO - Initializing clients
+2024-12-14 21:20:42,267 - INFO - Initialized 5 clients successfully
+2024-12-14 21:20:42,267 - INFO - 
+Starting round 1/10
+2024-12-14 21:20:42,267 - INFO - Training client 1/5 in round 1
+2024-12-14 21:20:45,054 - INFO - Round 1, Client 1 training completed. Accuracy: 0.9503, Time: 2.38s
+2024-12-14 21:20:45,054 - INFO - Training client 2/5 in round 1
+2024-12-14 21:20:47,884 - INFO - Round 1, Client 2 training completed. Accuracy: 0.9438, Time: 2.41s
+2024-12-14 21:20:47,884 - INFO - Training client 3/5 in round 1
+2024-12-14 21:20:50,781 - INFO - Round 1, Client 3 training completed. Accuracy: 0.9513, Time: 2.47s
+2024-12-14 21:20:50,781 - INFO - Training client 4/5 in round 1
+2024-12-14 21:20:53,737 - INFO - Round 1, Client 4 training completed. Accuracy: 0.9513, Time: 2.52s
+2024-12-14 21:20:53,737 - INFO - Training client 5/5 in round 1
+2024-12-14 21:20:56,710 - INFO - Round 1, Client 5 training completed. Accuracy: 0.9505, Time: 2.54s
+2024-12-14 21:20:56,710 - INFO - Aggregating models for round 1
+2024-12-14 21:20:57,072 - INFO - Round 1 completed. Global accuracy: 0.9398, Time: 14.80s
+2024-12-14 21:20:57,072 - INFO - 
+Starting round 2/10
+2024-12-14 21:20:57,072 - INFO - Training client 1/5 in round 2
+2024-12-14 21:21:00,070 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9611, Time: 2.56s
+2024-12-14 21:21:00,070 - INFO - Training client 2/5 in round 2
+2024-12-14 21:21:03,108 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9620, Time: 2.59s
+2024-12-14 21:21:03,108 - INFO - Training client 3/5 in round 2
+2024-12-14 21:21:06,151 - INFO - Round 2, Client 3 training completed. Accuracy: 0.9555, Time: 2.60s
+2024-12-14 21:21:06,151 - INFO - Training client 4/5 in round 2
+2024-12-14 21:21:09,216 - INFO - Round 2, Client 4 training completed. Accuracy: 0.9592, Time: 2.61s
+2024-12-14 21:21:09,216 - INFO - Training client 5/5 in round 2
+2024-12-14 21:21:12,315 - INFO - Round 2, Client 5 training completed. Accuracy: 0.9661, Time: 2.64s
+2024-12-14 21:21:12,315 - INFO - Aggregating models for round 2
+2024-12-14 21:21:12,687 - INFO - Round 2 completed. Global accuracy: 0.9593, Time: 15.62s
+2024-12-14 21:21:12,688 - INFO - 
+Starting round 3/10
+2024-12-14 21:21:12,688 - INFO - Training client 1/5 in round 3
+2024-12-14 21:21:15,830 - INFO - Round 3, Client 1 training completed. Accuracy: 0.9678, Time: 2.68s
+2024-12-14 21:21:15,830 - INFO - Training client 2/5 in round 3
+2024-12-14 21:21:18,954 - INFO - Round 3, Client 2 training completed. Accuracy: 0.9712, Time: 2.66s
+2024-12-14 21:21:18,954 - INFO - Training client 3/5 in round 3
+2024-12-14 21:21:22,093 - INFO - Round 3, Client 3 training completed. Accuracy: 0.9698, Time: 2.68s
+2024-12-14 21:21:22,093 - INFO - Training client 4/5 in round 3
+2024-12-14 21:21:25,252 - INFO - Round 3, Client 4 training completed. Accuracy: 0.9781, Time: 2.69s
+2024-12-14 21:21:25,252 - INFO - Training client 5/5 in round 3
+2024-12-14 21:21:28,423 - INFO - Round 3, Client 5 training completed. Accuracy: 0.9763, Time: 2.70s
+2024-12-14 21:21:28,423 - INFO - Aggregating models for round 3
+2024-12-14 21:21:28,805 - INFO - Round 3 completed. Global accuracy: 0.9676, Time: 16.12s
+2024-12-14 21:21:28,805 - INFO - 
+Starting round 4/10
+2024-12-14 21:21:28,805 - INFO - Training client 1/5 in round 4
+2024-12-14 21:21:31,989 - INFO - Round 4, Client 1 training completed. Accuracy: 0.9793, Time: 2.72s
+2024-12-14 21:21:31,989 - INFO - Training client 2/5 in round 4
+2024-12-14 21:21:35,168 - INFO - Round 4, Client 2 training completed. Accuracy: 0.9780, Time: 2.71s
+2024-12-14 21:21:35,168 - INFO - Training client 3/5 in round 4
+2024-12-14 21:21:38,345 - INFO - Round 4, Client 3 training completed. Accuracy: 0.9746, Time: 2.71s
+2024-12-14 21:21:38,345 - INFO - Training client 4/5 in round 4
+2024-12-14 21:21:41,530 - INFO - Round 4, Client 4 training completed. Accuracy: 0.9798, Time: 2.72s
+2024-12-14 21:21:41,530 - INFO - Training client 5/5 in round 4
+2024-12-14 21:21:44,729 - INFO - Round 4, Client 5 training completed. Accuracy: 0.9830, Time: 2.73s
+2024-12-14 21:21:44,729 - INFO - Aggregating models for round 4
+2024-12-14 21:21:45,115 - INFO - Round 4 completed. Global accuracy: 0.9732, Time: 16.31s
+2024-12-14 21:21:45,115 - INFO - 
+Starting round 5/10
+2024-12-14 21:21:45,115 - INFO - Training client 1/5 in round 5
+2024-12-14 21:21:48,331 - INFO - Round 5, Client 1 training completed. Accuracy: 0.9838, Time: 2.74s
+2024-12-14 21:21:48,331 - INFO - Training client 2/5 in round 5
+2024-12-14 21:21:51,543 - INFO - Round 5, Client 2 training completed. Accuracy: 0.9861, Time: 2.74s
+2024-12-14 21:21:51,543 - INFO - Training client 3/5 in round 5
+2024-12-14 21:21:54,756 - INFO - Round 5, Client 3 training completed. Accuracy: 0.9817, Time: 2.74s
+2024-12-14 21:21:54,756 - INFO - Training client 4/5 in round 5
+2024-12-14 21:21:58,244 - INFO - Round 5, Client 4 training completed. Accuracy: 0.9810, Time: 2.97s
+2024-12-14 21:21:58,244 - INFO - Training client 5/5 in round 5
+2024-12-14 21:22:01,674 - INFO - Round 5, Client 5 training completed. Accuracy: 0.9852, Time: 2.94s
+2024-12-14 21:22:01,674 - INFO - Aggregating models for round 5
+2024-12-14 21:22:02,075 - INFO - Round 5 completed. Global accuracy: 0.9748, Time: 16.96s
+2024-12-14 21:22:02,075 - INFO - 
+Starting round 6/10
+2024-12-14 21:22:02,075 - INFO - Simulating network partition...
+2024-12-14 21:22:02,580 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:22:02,581 - INFO - Training client 1/5 in round 6
+2024-12-14 21:22:05,876 - INFO - Round 6, Client 1 training completed. Accuracy: 0.9791, Time: 2.79s
+2024-12-14 21:22:05,876 - INFO - Training client 2/5 in round 6
+2024-12-14 21:22:09,557 - INFO - Round 6, Client 2 training completed. Accuracy: 0.9856, Time: 3.14s
+2024-12-14 21:22:09,557 - INFO - Training client 3/5 in round 6
+2024-12-14 21:22:13,432 - INFO - Round 6, Client 3 training completed. Accuracy: 0.9871, Time: 3.30s
+2024-12-14 21:22:13,432 - INFO - Training client 4/5 in round 6
+2024-12-14 21:22:17,645 - INFO - Round 6, Client 4 training completed. Accuracy: 0.9849, Time: 3.57s
+2024-12-14 21:22:17,645 - INFO - Training client 5/5 in round 6
+2024-12-14 21:22:22,353 - INFO - Round 6, Client 5 training completed. Accuracy: 0.9859, Time: 3.99s
+2024-12-14 21:22:22,353 - INFO - Aggregating models for round 6
+2024-12-14 21:22:22,960 - INFO - Round 6 completed. Global accuracy: 0.9769, Time: 20.88s
+2024-12-14 21:22:22,960 - INFO - 
+Starting round 7/10
+2024-12-14 21:22:22,960 - INFO - Training client 1/5 in round 7
+2024-12-14 21:22:28,397 - INFO - Round 7, Client 1 training completed. Accuracy: 0.9824, Time: 4.60s
+2024-12-14 21:22:28,397 - INFO - Training client 2/5 in round 7
+2024-12-14 21:22:34,555 - INFO - Round 7, Client 2 training completed. Accuracy: 0.9874, Time: 5.23s
+2024-12-14 21:22:34,555 - INFO - Training client 3/5 in round 7
+2024-12-14 21:22:40,903 - INFO - Round 7, Client 3 training completed. Accuracy: 0.9857, Time: 5.43s
+2024-12-14 21:22:40,903 - INFO - Training client 4/5 in round 7
+2024-12-14 21:22:47,028 - INFO - Round 7, Client 4 training completed. Accuracy: 0.9868, Time: 5.25s
+2024-12-14 21:22:47,028 - INFO - Training client 5/5 in round 7
+2024-12-14 21:22:53,231 - INFO - Round 7, Client 5 training completed. Accuracy: 0.9864, Time: 5.30s
+2024-12-14 21:22:53,231 - INFO - Aggregating models for round 7
+2024-12-14 21:22:53,973 - INFO - Round 7 completed. Global accuracy: 0.9765, Time: 31.01s
+2024-12-14 21:22:53,973 - INFO - 
+Starting round 8/10
+2024-12-14 21:22:53,973 - INFO - Training client 1/5 in round 8
+2024-12-14 21:23:00,146 - INFO - Round 8, Client 1 training completed. Accuracy: 0.9816, Time: 5.31s
+2024-12-14 21:23:00,146 - INFO - Training client 2/5 in round 8
+2024-12-14 21:23:06,192 - INFO - Round 8, Client 2 training completed. Accuracy: 0.9878, Time: 5.20s
+2024-12-14 21:23:06,192 - INFO - Training client 3/5 in round 8
+2024-12-14 21:23:11,928 - INFO - Round 8, Client 3 training completed. Accuracy: 0.9896, Time: 4.92s
+2024-12-14 21:23:11,928 - INFO - Training client 4/5 in round 8
+2024-12-14 21:23:17,397 - INFO - Round 8, Client 4 training completed. Accuracy: 0.9904, Time: 4.69s
+2024-12-14 21:23:17,397 - INFO - Training client 5/5 in round 8
+2024-12-14 21:23:22,574 - INFO - Round 8, Client 5 training completed. Accuracy: 0.9908, Time: 4.44s
+2024-12-14 21:23:22,575 - INFO - Aggregating models for round 8
+2024-12-14 21:23:23,180 - INFO - Round 8 completed. Global accuracy: 0.9784, Time: 29.21s
+2024-12-14 21:23:23,180 - INFO - 
+Starting round 9/10
+2024-12-14 21:23:23,180 - INFO - Training client 1/5 in round 9
+2024-12-14 21:23:28,131 - INFO - Round 9, Client 1 training completed. Accuracy: 0.9890, Time: 4.24s
+2024-12-14 21:23:28,131 - INFO - Training client 2/5 in round 9
+2024-12-14 21:23:32,928 - INFO - Round 9, Client 2 training completed. Accuracy: 0.9878, Time: 4.10s
+2024-12-14 21:23:32,928 - INFO - Training client 3/5 in round 9
+2024-12-14 21:23:37,638 - INFO - Round 9, Client 3 training completed. Accuracy: 0.9881, Time: 4.03s
+2024-12-14 21:23:37,638 - INFO - Training client 4/5 in round 9
+2024-12-14 21:23:42,319 - INFO - Round 9, Client 4 training completed. Accuracy: 0.9839, Time: 4.01s
+2024-12-14 21:23:42,319 - INFO - Training client 5/5 in round 9
+2024-12-14 21:23:46,924 - INFO - Round 9, Client 5 training completed. Accuracy: 0.9838, Time: 3.94s
+2024-12-14 21:23:46,924 - INFO - Aggregating models for round 9
+2024-12-14 21:23:47,476 - INFO - Round 9 completed. Global accuracy: 0.9784, Time: 24.30s
+2024-12-14 21:23:47,476 - INFO - 
+Starting round 10/10
+2024-12-14 21:23:47,476 - INFO - Training client 1/5 in round 10
+2024-12-14 21:23:52,062 - INFO - Round 10, Client 1 training completed. Accuracy: 0.9832, Time: 3.92s
+2024-12-14 21:23:52,063 - INFO - Training client 2/5 in round 10
+2024-12-14 21:23:56,599 - INFO - Round 10, Client 2 training completed. Accuracy: 0.9861, Time: 3.88s
+2024-12-14 21:23:56,599 - INFO - Training client 3/5 in round 10
+2024-12-14 21:24:01,073 - INFO - Round 10, Client 3 training completed. Accuracy: 0.9895, Time: 3.83s
+2024-12-14 21:24:01,073 - INFO - Training client 4/5 in round 10
+2024-12-14 21:24:05,545 - INFO - Round 10, Client 4 training completed. Accuracy: 0.9877, Time: 3.83s
+2024-12-14 21:24:05,545 - INFO - Training client 5/5 in round 10
+2024-12-14 21:24:10,023 - INFO - Round 10, Client 5 training completed. Accuracy: 0.9902, Time: 3.83s
+2024-12-14 21:24:10,023 - INFO - Aggregating models for round 10
+2024-12-14 21:24:10,564 - INFO - Round 10 completed. Global accuracy: 0.9794, Time: 23.09s
+2024-12-14 21:24:10,565 - INFO - Experiment with fedavg completed successfully
+2024-12-14 21:24:10,565 - INFO - Total training time: 208.30s
+2024-12-14 21:24:10,565 - INFO - Final accuracy: 0.9794
+2024-12-14 21:24:10,567 - INFO - Completed experiment with fedavg
+2024-12-14 21:24:10,567 - INFO - Starting experiment with fedprox
+2024-12-14 21:24:10,567 - INFO - Initializing experiment with fedprox
+2024-12-14 21:24:10,567 - INFO - Using device: cpu
+2024-12-14 21:24:10,567 - INFO - Initializing global model
+2024-12-14 21:24:10,568 - INFO - Testing scalability...
+2024-12-14 21:24:11,578 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:24:11,579 - INFO - Loading and preparing data
+2024-12-14 21:24:11,608 - INFO - Data loaded successfully. Number of clients: 5
+2024-12-14 21:24:11,608 - INFO - Initializing clients
+2024-12-14 21:24:11,611 - INFO - Initialized 5 clients successfully
+2024-12-14 21:24:11,611 - INFO - 
+Starting round 1/10
+2024-12-14 21:24:11,611 - INFO - Training client 1/5 in round 1
+2024-12-14 21:24:16,332 - INFO - Round 1, Client 1 training completed. Accuracy: 0.9344, Time: 4.04s
+2024-12-14 21:24:16,332 - INFO - Training client 2/5 in round 1
+2024-12-14 21:24:21,484 - INFO - Round 1, Client 2 training completed. Accuracy: 0.9329, Time: 4.51s
+2024-12-14 21:24:21,484 - INFO - Training client 3/5 in round 1
+2024-12-14 21:24:26,610 - INFO - Round 1, Client 3 training completed. Accuracy: 0.9349, Time: 4.48s
+2024-12-14 21:24:26,610 - INFO - Training client 4/5 in round 1
+2024-12-14 21:24:31,739 - INFO - Round 1, Client 4 training completed. Accuracy: 0.9425, Time: 4.49s
+2024-12-14 21:24:31,739 - INFO - Training client 5/5 in round 1
+2024-12-14 21:24:36,881 - INFO - Round 1, Client 5 training completed. Accuracy: 0.9263, Time: 4.50s
+2024-12-14 21:24:36,881 - INFO - Aggregating models for round 1
+2024-12-14 21:24:37,412 - INFO - Round 1 completed. Global accuracy: 0.9278, Time: 25.80s
+2024-12-14 21:24:37,412 - INFO - 
+Starting round 2/10
+2024-12-14 21:24:37,413 - INFO - Training client 1/5 in round 2
+2024-12-14 21:24:42,517 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9464, Time: 4.45s
+2024-12-14 21:24:42,517 - INFO - Training client 2/5 in round 2
+2024-12-14 21:24:47,549 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9243, Time: 4.40s
+2024-12-14 21:24:47,549 - INFO - Training client 3/5 in round 2
+2024-12-14 21:24:52,615 - INFO - Round 2, Client 3 training completed. Accuracy: 0.9462, Time: 4.43s
+2024-12-14 21:24:52,615 - INFO - Training client 4/5 in round 2
+2024-12-14 21:24:57,827 - INFO - Round 2, Client 4 training completed. Accuracy: 0.9467, Time: 4.56s
+2024-12-14 21:24:57,827 - INFO - Training client 5/5 in round 2
+2024-12-14 21:25:02,955 - INFO - Round 2, Client 5 training completed. Accuracy: 0.9541, Time: 4.48s
+2024-12-14 21:25:02,955 - INFO - Aggregating models for round 2
+2024-12-14 21:25:03,485 - INFO - Round 2 completed. Global accuracy: 0.9509, Time: 26.07s
+2024-12-14 21:25:03,486 - INFO - 
+Starting round 3/10
+2024-12-14 21:25:03,486 - INFO - Training client 1/5 in round 3
+2024-12-14 21:25:08,640 - INFO - Round 3, Client 1 training completed. Accuracy: 0.9501, Time: 4.51s
+2024-12-14 21:25:08,640 - INFO - Training client 2/5 in round 3
+2024-12-14 21:25:13,851 - INFO - Round 3, Client 2 training completed. Accuracy: 0.9557, Time: 4.57s
+2024-12-14 21:25:13,851 - INFO - Training client 3/5 in round 3
+2024-12-14 21:25:19,025 - INFO - Round 3, Client 3 training completed. Accuracy: 0.9523, Time: 4.51s
+2024-12-14 21:25:19,025 - INFO - Training client 4/5 in round 3
+2024-12-14 21:25:24,210 - INFO - Round 3, Client 4 training completed. Accuracy: 0.9603, Time: 4.53s
+2024-12-14 21:25:24,210 - INFO - Training client 5/5 in round 3
+2024-12-14 21:25:29,415 - INFO - Round 3, Client 5 training completed. Accuracy: 0.9579, Time: 4.55s
+2024-12-14 21:25:29,415 - INFO - Aggregating models for round 3
+2024-12-14 21:25:29,961 - INFO - Round 3 completed. Global accuracy: 0.9589, Time: 26.48s
+2024-12-14 21:25:29,961 - INFO - 
+Starting round 4/10
+2024-12-14 21:25:29,961 - INFO - Training client 1/5 in round 4
+2024-12-14 21:25:35,146 - INFO - Round 4, Client 1 training completed. Accuracy: 0.9636, Time: 4.53s
+2024-12-14 21:25:35,146 - INFO - Training client 2/5 in round 4
+2024-12-14 21:25:40,327 - INFO - Round 4, Client 2 training completed. Accuracy: 0.9613, Time: 4.52s
+2024-12-14 21:25:40,327 - INFO - Training client 3/5 in round 4
+2024-12-14 21:25:47,216 - INFO - Round 4, Client 3 training completed. Accuracy: 0.9616, Time: 5.60s
+2024-12-14 21:25:47,216 - INFO - Training client 4/5 in round 4
+2024-12-14 21:25:53,842 - INFO - Round 4, Client 4 training completed. Accuracy: 0.9689, Time: 5.95s
+2024-12-14 21:25:53,842 - INFO - Training client 5/5 in round 4
+2024-12-14 21:25:59,168 - INFO - Round 4, Client 5 training completed. Accuracy: 0.9679, Time: 4.66s
+2024-12-14 21:25:59,168 - INFO - Aggregating models for round 4
+2024-12-14 21:25:59,720 - INFO - Round 4 completed. Global accuracy: 0.9652, Time: 29.76s
+2024-12-14 21:25:59,720 - INFO - 
+Starting round 5/10
+2024-12-14 21:25:59,721 - INFO - Training client 1/5 in round 5
+2024-12-14 21:26:05,426 - INFO - Round 5, Client 1 training completed. Accuracy: 0.9586, Time: 5.02s
+2024-12-14 21:26:05,426 - INFO - Training client 2/5 in round 5
+2024-12-14 21:26:10,945 - INFO - Round 5, Client 2 training completed. Accuracy: 0.9703, Time: 4.83s
+2024-12-14 21:26:10,945 - INFO - Training client 3/5 in round 5
+2024-12-14 21:26:16,437 - INFO - Round 5, Client 3 training completed. Accuracy: 0.9713, Time: 4.79s
+2024-12-14 21:26:16,437 - INFO - Training client 4/5 in round 5
+2024-12-14 21:26:21,924 - INFO - Round 5, Client 4 training completed. Accuracy: 0.9688, Time: 4.80s
+2024-12-14 21:26:21,924 - INFO - Training client 5/5 in round 5
+2024-12-14 21:26:27,335 - INFO - Round 5, Client 5 training completed. Accuracy: 0.9740, Time: 4.73s
+2024-12-14 21:26:27,335 - INFO - Aggregating models for round 5
+2024-12-14 21:26:27,897 - INFO - Round 5 completed. Global accuracy: 0.9679, Time: 28.18s
+2024-12-14 21:26:27,897 - INFO - 
+Starting round 6/10
+2024-12-14 21:26:27,897 - INFO - Simulating network partition...
+2024-12-14 21:26:28,408 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:26:28,408 - INFO - Training client 1/5 in round 6
+2024-12-14 21:26:33,700 - INFO - Round 6, Client 1 training completed. Accuracy: 0.9692, Time: 4.60s
+2024-12-14 21:26:33,700 - INFO - Training client 2/5 in round 6
+2024-12-14 21:26:39,137 - INFO - Round 6, Client 2 training completed. Accuracy: 0.9687, Time: 4.75s
+2024-12-14 21:26:39,137 - INFO - Training client 3/5 in round 6
+2024-12-14 21:26:44,588 - INFO - Round 6, Client 3 training completed. Accuracy: 0.9610, Time: 4.76s
+2024-12-14 21:26:44,588 - INFO - Training client 4/5 in round 6
+2024-12-14 21:26:50,050 - INFO - Round 6, Client 4 training completed. Accuracy: 0.9692, Time: 4.78s
+2024-12-14 21:26:50,050 - INFO - Training client 5/5 in round 6
+2024-12-14 21:26:55,580 - INFO - Round 6, Client 5 training completed. Accuracy: 0.9726, Time: 4.82s
+2024-12-14 21:26:55,580 - INFO - Aggregating models for round 6
+2024-12-14 21:26:56,176 - INFO - Round 6 completed. Global accuracy: 0.9705, Time: 28.28s
+2024-12-14 21:26:56,176 - INFO - 
+Starting round 7/10
+2024-12-14 21:26:56,176 - INFO - Training client 1/5 in round 7
+2024-12-14 21:27:01,577 - INFO - Round 7, Client 1 training completed. Accuracy: 0.9732, Time: 4.73s
+2024-12-14 21:27:01,577 - INFO - Training client 2/5 in round 7
+2024-12-14 21:27:06,869 - INFO - Round 7, Client 2 training completed. Accuracy: 0.9722, Time: 4.63s
+2024-12-14 21:27:06,870 - INFO - Training client 3/5 in round 7
+2024-12-14 21:27:12,191 - INFO - Round 7, Client 3 training completed. Accuracy: 0.9788, Time: 4.66s
+2024-12-14 21:27:12,192 - INFO - Training client 4/5 in round 7
+2024-12-14 21:27:17,425 - INFO - Round 7, Client 4 training completed. Accuracy: 0.9774, Time: 4.58s
+2024-12-14 21:27:17,426 - INFO - Training client 5/5 in round 7
+2024-12-14 21:27:22,590 - INFO - Round 7, Client 5 training completed. Accuracy: 0.9767, Time: 4.50s
+2024-12-14 21:27:22,590 - INFO - Aggregating models for round 7
+2024-12-14 21:27:23,127 - INFO - Round 7 completed. Global accuracy: 0.9720, Time: 26.95s
+2024-12-14 21:27:23,127 - INFO - 
+Starting round 8/10
+2024-12-14 21:27:23,127 - INFO - Training client 1/5 in round 8
+2024-12-14 21:27:28,326 - INFO - Round 8, Client 1 training completed. Accuracy: 0.9738, Time: 4.52s
+2024-12-14 21:27:28,327 - INFO - Training client 2/5 in round 8
+2024-12-14 21:27:33,526 - INFO - Round 8, Client 2 training completed. Accuracy: 0.9667, Time: 4.54s
+2024-12-14 21:27:33,526 - INFO - Training client 3/5 in round 8
+2024-12-14 21:27:38,691 - INFO - Round 8, Client 3 training completed. Accuracy: 0.9769, Time: 4.52s
+2024-12-14 21:27:38,691 - INFO - Training client 4/5 in round 8
+2024-12-14 21:27:43,986 - INFO - Round 8, Client 4 training completed. Accuracy: 0.9796, Time: 4.61s
+2024-12-14 21:27:43,986 - INFO - Training client 5/5 in round 8
+2024-12-14 21:27:49,200 - INFO - Round 8, Client 5 training completed. Accuracy: 0.9813, Time: 4.55s
+2024-12-14 21:27:49,200 - INFO - Aggregating models for round 8
+2024-12-14 21:27:49,753 - INFO - Round 8 completed. Global accuracy: 0.9721, Time: 26.63s
+2024-12-14 21:27:49,753 - INFO - 
+Starting round 9/10
+2024-12-14 21:27:49,753 - INFO - Training client 1/5 in round 9
+2024-12-14 21:27:55,036 - INFO - Round 9, Client 1 training completed. Accuracy: 0.9791, Time: 4.61s
+2024-12-14 21:27:55,036 - INFO - Training client 2/5 in round 9
+2024-12-14 21:28:00,303 - INFO - Round 9, Client 2 training completed. Accuracy: 0.9748, Time: 4.60s
+2024-12-14 21:28:00,303 - INFO - Training client 3/5 in round 9
+2024-12-14 21:28:05,547 - INFO - Round 9, Client 3 training completed. Accuracy: 0.9795, Time: 4.57s
+2024-12-14 21:28:05,547 - INFO - Training client 4/5 in round 9
+2024-12-14 21:28:10,822 - INFO - Round 9, Client 4 training completed. Accuracy: 0.9754, Time: 4.62s
+2024-12-14 21:28:10,823 - INFO - Training client 5/5 in round 9
+2024-12-14 21:28:16,123 - INFO - Round 9, Client 5 training completed. Accuracy: 0.9854, Time: 4.63s
+2024-12-14 21:28:16,124 - INFO - Aggregating models for round 9
+2024-12-14 21:28:16,679 - INFO - Round 9 completed. Global accuracy: 0.9745, Time: 26.92s
+2024-12-14 21:28:16,679 - INFO - 
+Starting round 10/10
+2024-12-14 21:28:16,679 - INFO - Training client 1/5 in round 10
+2024-12-14 21:28:21,928 - INFO - Round 10, Client 1 training completed. Accuracy: 0.9806, Time: 4.56s
+2024-12-14 21:28:21,928 - INFO - Training client 2/5 in round 10
+2024-12-14 21:28:27,154 - INFO - Round 10, Client 2 training completed. Accuracy: 0.9730, Time: 4.56s
+2024-12-14 21:28:27,155 - INFO - Training client 3/5 in round 10
+2024-12-14 21:28:32,361 - INFO - Round 10, Client 3 training completed. Accuracy: 0.9820, Time: 4.56s
+2024-12-14 21:28:32,362 - INFO - Training client 4/5 in round 10
+2024-12-14 21:28:37,503 - INFO - Round 10, Client 4 training completed. Accuracy: 0.9771, Time: 4.50s
+2024-12-14 21:28:37,503 - INFO - Training client 5/5 in round 10
+2024-12-14 21:28:42,633 - INFO - Round 10, Client 5 training completed. Accuracy: 0.9789, Time: 4.49s
+2024-12-14 21:28:42,633 - INFO - Aggregating models for round 10
+2024-12-14 21:28:43,167 - INFO - Round 10 completed. Global accuracy: 0.9746, Time: 26.49s
+2024-12-14 21:28:43,168 - INFO - Experiment with fedprox completed successfully
+2024-12-14 21:28:43,168 - INFO - Total training time: 271.56s
+2024-12-14 21:28:43,168 - INFO - Final accuracy: 0.9746
+2024-12-14 21:28:43,170 - INFO - Completed experiment with fedprox
+2024-12-14 21:28:43,170 - INFO - Starting experiment with cwt
+2024-12-14 21:28:43,170 - INFO - Initializing experiment with cwt
+2024-12-14 21:28:43,170 - INFO - Using device: cpu
+2024-12-14 21:28:43,170 - INFO - Initializing global model
+2024-12-14 21:28:43,171 - INFO - Testing scalability...
+2024-12-14 21:28:44,201 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:28:44,202 - INFO - Loading and preparing data
+2024-12-14 21:28:44,236 - INFO - Data loaded successfully. Number of clients: 5
+2024-12-14 21:28:44,236 - INFO - Initializing clients
+2024-12-14 21:28:44,239 - INFO - Initialized 5 clients successfully
+2024-12-14 21:28:44,239 - INFO - 
+Starting round 1/10
+2024-12-14 21:28:44,239 - INFO - Training client 1/5 in round 1
+2024-12-14 21:28:48,461 - INFO - Round 1, Client 1 training completed. Accuracy: 0.9543, Time: 3.54s
+2024-12-14 21:28:48,462 - INFO - Training client 2/5 in round 1
+2024-12-14 21:28:53,089 - INFO - Round 1, Client 2 training completed. Accuracy: 0.9318, Time: 3.98s
+2024-12-14 21:28:53,089 - INFO - Training client 3/5 in round 1
+2024-12-14 21:28:57,639 - INFO - Round 1, Client 3 training completed. Accuracy: 0.9464, Time: 3.88s
+2024-12-14 21:28:57,639 - INFO - Training client 4/5 in round 1
+2024-12-14 21:29:02,290 - INFO - Round 1, Client 4 training completed. Accuracy: 0.9351, Time: 3.99s
+2024-12-14 21:29:02,290 - INFO - Training client 5/5 in round 1
+2024-12-14 21:29:06,883 - INFO - Round 1, Client 5 training completed. Accuracy: 0.9394, Time: 3.92s
+2024-12-14 21:29:06,883 - INFO - Aggregating models for round 1
+2024-12-14 21:29:07,438 - INFO - Round 1 completed. Global accuracy: 0.9417, Time: 23.20s
+2024-12-14 21:29:07,438 - INFO - 
+Starting round 2/10
+2024-12-14 21:29:07,438 - INFO - Training client 1/5 in round 2
+2024-12-14 21:29:12,058 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9696, Time: 3.94s
+2024-12-14 21:29:12,058 - INFO - Training client 2/5 in round 2
+2024-12-14 21:29:16,695 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9606, Time: 3.95s
+2024-12-14 21:29:16,695 - INFO - Training client 3/5 in round 2
+2024-12-14 21:29:21,307 - INFO - Round 2, Client 3 training completed. Accuracy: 0.9683, Time: 3.95s
+2024-12-14 21:29:21,308 - INFO - Training client 4/5 in round 2
+2024-12-14 21:29:25,988 - INFO - Round 2, Client 4 training completed. Accuracy: 0.9643, Time: 4.00s
+2024-12-14 21:29:25,988 - INFO - Training client 5/5 in round 2
+2024-12-14 21:29:30,633 - INFO - Round 2, Client 5 training completed. Accuracy: 0.9653, Time: 3.96s
+2024-12-14 21:29:30,634 - INFO - Aggregating models for round 2
+2024-12-14 21:29:31,192 - INFO - Round 2 completed. Global accuracy: 0.9482, Time: 23.75s
+2024-12-14 21:29:31,192 - INFO - 
+Starting round 3/10
+2024-12-14 21:29:31,192 - INFO - Training client 1/5 in round 3
+2024-12-14 21:29:35,781 - INFO - Round 3, Client 1 training completed. Accuracy: 0.9752, Time: 3.92s
+2024-12-14 21:29:35,781 - INFO - Training client 2/5 in round 3
+2024-12-14 21:29:40,313 - INFO - Round 3, Client 2 training completed. Accuracy: 0.9793, Time: 3.87s
+2024-12-14 21:29:40,313 - INFO - Training client 3/5 in round 3
+2024-12-14 21:29:44,798 - INFO - Round 3, Client 3 training completed. Accuracy: 0.9746, Time: 3.84s
+2024-12-14 21:29:44,799 - INFO - Training client 4/5 in round 3
+2024-12-14 21:29:49,292 - INFO - Round 3, Client 4 training completed. Accuracy: 0.9734, Time: 3.84s
+2024-12-14 21:29:49,292 - INFO - Training client 5/5 in round 3
+2024-12-14 21:29:53,775 - INFO - Round 3, Client 5 training completed. Accuracy: 0.9724, Time: 3.84s
+2024-12-14 21:29:53,776 - INFO - Aggregating models for round 3
+2024-12-14 21:29:54,308 - INFO - Round 3 completed. Global accuracy: 0.9613, Time: 23.11s
+2024-12-14 21:29:54,308 - INFO - 
+Starting round 4/10
+2024-12-14 21:29:54,308 - INFO - Training client 1/5 in round 4
+2024-12-14 21:29:58,878 - INFO - Round 4, Client 1 training completed. Accuracy: 0.9778, Time: 3.91s
+2024-12-14 21:29:58,878 - INFO - Training client 2/5 in round 4
+2024-12-14 21:30:03,400 - INFO - Round 4, Client 2 training completed. Accuracy: 0.9768, Time: 3.86s
+2024-12-14 21:30:03,400 - INFO - Training client 3/5 in round 4
+2024-12-14 21:30:07,945 - INFO - Round 4, Client 3 training completed. Accuracy: 0.9779, Time: 3.88s
+2024-12-14 21:30:07,945 - INFO - Training client 4/5 in round 4
+2024-12-14 21:30:12,493 - INFO - Round 4, Client 4 training completed. Accuracy: 0.9748, Time: 3.89s
+2024-12-14 21:30:12,493 - INFO - Training client 5/5 in round 4
+2024-12-14 21:30:17,005 - INFO - Round 4, Client 5 training completed. Accuracy: 0.9728, Time: 3.85s
+2024-12-14 21:30:17,005 - INFO - Aggregating models for round 4
+2024-12-14 21:30:17,549 - INFO - Round 4 completed. Global accuracy: 0.9630, Time: 23.24s
+2024-12-14 21:30:17,549 - INFO - 
+Starting round 5/10
+2024-12-14 21:30:17,549 - INFO - Training client 1/5 in round 5
+2024-12-14 21:30:22,122 - INFO - Round 5, Client 1 training completed. Accuracy: 0.9805, Time: 3.91s
+2024-12-14 21:30:22,122 - INFO - Training client 2/5 in round 5
+2024-12-14 21:30:26,750 - INFO - Round 5, Client 2 training completed. Accuracy: 0.9766, Time: 3.97s
+2024-12-14 21:30:26,750 - INFO - Training client 3/5 in round 5
+2024-12-14 21:30:31,309 - INFO - Round 5, Client 3 training completed. Accuracy: 0.9814, Time: 3.90s
+2024-12-14 21:30:31,309 - INFO - Training client 4/5 in round 5
+2024-12-14 21:30:35,888 - INFO - Round 5, Client 4 training completed. Accuracy: 0.9803, Time: 3.91s
+2024-12-14 21:30:35,888 - INFO - Training client 5/5 in round 5
+2024-12-14 21:30:40,470 - INFO - Round 5, Client 5 training completed. Accuracy: 0.9765, Time: 3.92s
+2024-12-14 21:30:40,471 - INFO - Aggregating models for round 5
+2024-12-14 21:30:41,017 - INFO - Round 5 completed. Global accuracy: 0.9662, Time: 23.47s
+2024-12-14 21:30:41,017 - INFO - 
+Starting round 6/10
+2024-12-14 21:30:41,017 - INFO - Simulating network partition...
+2024-12-14 21:30:41,528 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:30:41,528 - INFO - Training client 1/5 in round 6
+2024-12-14 21:30:45,920 - INFO - Round 6, Client 1 training completed. Accuracy: 0.9826, Time: 3.72s
+2024-12-14 21:30:45,921 - INFO - Training client 2/5 in round 6
+2024-12-14 21:30:50,493 - INFO - Round 6, Client 2 training completed. Accuracy: 0.9803, Time: 3.92s
+2024-12-14 21:30:50,493 - INFO - Training client 3/5 in round 6
+2024-12-14 21:30:55,065 - INFO - Round 6, Client 3 training completed. Accuracy: 0.9814, Time: 3.87s
+2024-12-14 21:30:55,065 - INFO - Training client 4/5 in round 6
+2024-12-14 21:30:59,777 - INFO - Round 6, Client 4 training completed. Accuracy: 0.9841, Time: 4.06s
+2024-12-14 21:30:59,777 - INFO - Training client 5/5 in round 6
+2024-12-14 21:31:04,247 - INFO - Round 6, Client 5 training completed. Accuracy: 0.9855, Time: 3.82s
+2024-12-14 21:31:04,247 - INFO - Aggregating models for round 6
+2024-12-14 21:31:04,780 - INFO - Round 6 completed. Global accuracy: 0.9654, Time: 23.76s
+2024-12-14 21:31:04,781 - INFO - 
+Starting round 7/10
+2024-12-14 21:31:04,781 - INFO - Training client 1/5 in round 7
+2024-12-14 21:31:09,226 - INFO - Round 7, Client 1 training completed. Accuracy: 0.9887, Time: 3.80s
+2024-12-14 21:31:09,226 - INFO - Training client 2/5 in round 7
+2024-12-14 21:31:13,652 - INFO - Round 7, Client 2 training completed. Accuracy: 0.9797, Time: 3.78s
+2024-12-14 21:31:13,652 - INFO - Training client 3/5 in round 7
+2024-12-14 21:31:18,091 - INFO - Round 7, Client 3 training completed. Accuracy: 0.9846, Time: 3.79s
+2024-12-14 21:31:18,091 - INFO - Training client 4/5 in round 7
+2024-12-14 21:31:22,551 - INFO - Round 7, Client 4 training completed. Accuracy: 0.9812, Time: 3.82s
+2024-12-14 21:31:22,551 - INFO - Training client 5/5 in round 7
+2024-12-14 21:31:26,994 - INFO - Round 7, Client 5 training completed. Accuracy: 0.9871, Time: 3.79s
+2024-12-14 21:31:26,994 - INFO - Aggregating models for round 7
+2024-12-14 21:31:27,531 - INFO - Round 7 completed. Global accuracy: 0.9669, Time: 22.75s
+2024-12-14 21:31:27,531 - INFO - 
+Starting round 8/10
+2024-12-14 21:31:27,531 - INFO - Training client 1/5 in round 8
+2024-12-14 21:31:31,978 - INFO - Round 8, Client 1 training completed. Accuracy: 0.9848, Time: 3.80s
+2024-12-14 21:31:31,978 - INFO - Training client 2/5 in round 8
+2024-12-14 21:31:36,427 - INFO - Round 8, Client 2 training completed. Accuracy: 0.9882, Time: 3.79s
+2024-12-14 21:31:36,427 - INFO - Training client 3/5 in round 8
+2024-12-14 21:31:40,894 - INFO - Round 8, Client 3 training completed. Accuracy: 0.9784, Time: 3.82s
+2024-12-14 21:31:40,894 - INFO - Training client 4/5 in round 8
+2024-12-14 21:31:45,352 - INFO - Round 8, Client 4 training completed. Accuracy: 0.9866, Time: 3.81s
+2024-12-14 21:31:45,352 - INFO - Training client 5/5 in round 8
+2024-12-14 21:31:49,839 - INFO - Round 8, Client 5 training completed. Accuracy: 0.9875, Time: 3.83s
+2024-12-14 21:31:49,839 - INFO - Aggregating models for round 8
+2024-12-14 21:31:50,374 - INFO - Round 8 completed. Global accuracy: 0.9672, Time: 22.84s
+2024-12-14 21:31:50,374 - INFO - 
+Starting round 9/10
+2024-12-14 21:31:50,374 - INFO - Training client 1/5 in round 9
+2024-12-14 21:31:54,893 - INFO - Round 9, Client 1 training completed. Accuracy: 0.9870, Time: 3.86s
+2024-12-14 21:31:54,893 - INFO - Training client 2/5 in round 9
+2024-12-14 21:31:59,404 - INFO - Round 9, Client 2 training completed. Accuracy: 0.9852, Time: 3.86s
+2024-12-14 21:31:59,404 - INFO - Training client 3/5 in round 9
+2024-12-14 21:32:04,014 - INFO - Round 9, Client 3 training completed. Accuracy: 0.9902, Time: 3.94s
+2024-12-14 21:32:04,014 - INFO - Training client 4/5 in round 9
+2024-12-14 21:32:08,610 - INFO - Round 9, Client 4 training completed. Accuracy: 0.9863, Time: 3.94s
+2024-12-14 21:32:08,610 - INFO - Training client 5/5 in round 9
+2024-12-14 21:32:13,198 - INFO - Round 9, Client 5 training completed. Accuracy: 0.9804, Time: 3.93s
+2024-12-14 21:32:13,198 - INFO - Aggregating models for round 9
+2024-12-14 21:32:13,750 - INFO - Round 9 completed. Global accuracy: 0.9731, Time: 23.38s
+2024-12-14 21:32:13,751 - INFO - 
+Starting round 10/10
+2024-12-14 21:32:13,751 - INFO - Training client 1/5 in round 10
+2024-12-14 21:32:18,299 - INFO - Round 10, Client 1 training completed. Accuracy: 0.9886, Time: 3.88s
+2024-12-14 21:32:18,299 - INFO - Training client 2/5 in round 10
+2024-12-14 21:32:22,846 - INFO - Round 10, Client 2 training completed. Accuracy: 0.9848, Time: 3.90s
+2024-12-14 21:32:22,846 - INFO - Training client 3/5 in round 10
+2024-12-14 21:32:27,355 - INFO - Round 10, Client 3 training completed. Accuracy: 0.9898, Time: 3.85s
+2024-12-14 21:32:27,355 - INFO - Training client 4/5 in round 10
+2024-12-14 21:32:31,893 - INFO - Round 10, Client 4 training completed. Accuracy: 0.9882, Time: 3.88s
+2024-12-14 21:32:31,893 - INFO - Training client 5/5 in round 10
+2024-12-14 21:32:36,573 - INFO - Round 10, Client 5 training completed. Accuracy: 0.9841, Time: 4.00s
+2024-12-14 21:32:36,574 - INFO - Aggregating models for round 10
+2024-12-14 21:32:37,152 - INFO - Round 10 completed. Global accuracy: 0.9728, Time: 23.40s
+2024-12-14 21:32:37,153 - INFO - Experiment with cwt completed successfully
+2024-12-14 21:32:37,153 - INFO - Total training time: 232.91s
+2024-12-14 21:32:37,153 - INFO - Final accuracy: 0.9728
+2024-12-14 21:32:37,155 - INFO - Completed experiment with cwt
+2024-12-14 21:32:37,155 - INFO - Starting experiment with dp_fedavg
+2024-12-14 21:32:37,155 - INFO - Initializing experiment with dp_fedavg
+2024-12-14 21:32:37,155 - INFO - Using device: cpu
+2024-12-14 21:32:37,155 - INFO - Initializing global model
+2024-12-14 21:32:37,156 - INFO - Testing scalability...
+2024-12-14 21:32:38,178 - INFO - Scalability testing completed: 3 configurations tested
+2024-12-14 21:32:38,179 - INFO - Loading and preparing data
+2024-12-14 21:32:38,205 - INFO - Data loaded successfully. Number of clients: 5
+2024-12-14 21:32:38,205 - INFO - Initializing clients
+2024-12-14 21:32:38,206 - INFO - Initialized 5 clients successfully
+2024-12-14 21:32:38,206 - INFO - 
+Starting round 1/10
+2024-12-14 21:32:38,206 - INFO - Training client 1/5 in round 1
+2024-12-14 21:32:43,531 - INFO - Round 1, Client 1 training completed. Accuracy: 0.9067, Time: 4.61s
+2024-12-14 21:32:43,532 - INFO - Training client 2/5 in round 1
+2024-12-14 21:32:48,707 - INFO - Round 1, Client 2 training completed. Accuracy: 0.9025, Time: 4.49s
+2024-12-14 21:32:48,707 - INFO - Training client 3/5 in round 1
+2024-12-14 21:32:53,984 - INFO - Round 1, Client 3 training completed. Accuracy: 0.8932, Time: 4.59s
+2024-12-14 21:32:53,985 - INFO - Training client 4/5 in round 1
+2024-12-14 21:32:59,256 - INFO - Round 1, Client 4 training completed. Accuracy: 0.8819, Time: 4.58s
+2024-12-14 21:32:59,256 - INFO - Training client 5/5 in round 1
+2024-12-14 21:33:04,574 - INFO - Round 1, Client 5 training completed. Accuracy: 0.8831, Time: 4.61s
+2024-12-14 21:33:04,574 - INFO - Aggregating models for round 1
+2024-12-14 21:33:05,165 - INFO - Round 1 completed. Global accuracy: 0.9120, Time: 26.96s
+2024-12-14 21:33:05,165 - INFO - 
+Starting round 2/10
+2024-12-14 21:33:05,165 - INFO - Training client 1/5 in round 2
+2024-12-14 21:33:10,516 - INFO - Round 2, Client 1 training completed. Accuracy: 0.9110, Time: 4.65s
+2024-12-14 21:33:10,516 - INFO - Training client 2/5 in round 2
+2024-12-14 21:33:15,784 - INFO - Round 2, Client 2 training completed. Accuracy: 0.9172, Time: 4.58s
+2024-12-14 21:33:15,784 - INFO - Training client 3/5 in round 2
+2024-12-14 21:33:21,066 - INFO - Round 2, Client 3 training completed. Accuracy: 0.8989, Time: 4.59s
+2024-12-14 21:33:21,066 - INFO - Training client 4/5 in round 2
+2024-12-14 21:33:26,327 - INFO - Round 2, Client 4 training completed. Accuracy: 0.8964, Time: 4.58s
+2024-12-14 21:33:26,327 - INFO - Training client 5/5 in round 2
+2024-12-14 21:33:31,558 - INFO - Round 2, Client 5 training completed. Accuracy: 0.8533, Time: 4.55s
+2024-12-14 21:33:31,558 - INFO - Aggregating models for round 2
+2024-12-14 21:33:32,126 - INFO - Round 2 completed. Global accuracy: 0.9191, Time: 26.96s
+2024-12-14 21:33:32,126 - INFO - 
+Starting round 3/10
+2024-12-14 21:33:32,126 - INFO - Training client 1/5 in round 3
+2024-12-14 21:33:37,343 - INFO - Round 3, Client 1 training completed. Accuracy: 0.8982, Time: 4.55s
+2024-12-14 21:33:37,343 - INFO - Training client 2/5 in round 3
+2024-12-14 21:33:42,416 - INFO - Round 3, Client 2 training completed. Accuracy: 0.8942, Time: 4.41s
+2024-12-14 21:33:42,416 - INFO - Training client 3/5 in round 3
+2024-12-14 21:33:47,474 - INFO - Round 3, Client 3 training completed. Accuracy: 0.9235, Time: 4.39s
+2024-12-14 21:33:47,474 - INFO - Training client 4/5 in round 3
+2024-12-14 21:33:52,545 - INFO - Round 3, Client 4 training completed. Accuracy: 0.9182, Time: 4.41s
+2024-12-14 21:33:52,546 - INFO - Training client 5/5 in round 3
+2024-12-14 21:33:57,634 - INFO - Round 3, Client 5 training completed. Accuracy: 0.9183, Time: 4.42s
+2024-12-14 21:33:57,634 - INFO - Aggregating models for round 3
+2024-12-14 21:33:58,185 - INFO - Round 3 completed. Global accuracy: 0.9201, Time: 26.06s
+2024-12-14 21:33:58,185 - INFO - 
+Starting round 4/10
+2024-12-14 21:33:58,185 - INFO - Training client 1/5 in round 4
+2024-12-14 21:34:03,236 - INFO - Round 4, Client 1 training completed. Accuracy: 0.9205, Time: 4.38s
+2024-12-14 21:34:03,237 - INFO - Training client 2/5 in round 4
+2024-12-14 21:34:08,412 - INFO - Round 4, Client 2 training completed. Accuracy: 0.9103, Time: 4.50s
+2024-12-14 21:34:08,412 - INFO - Training client 3/5 in round 4
+2024-12-14 21:34:13,418 - INFO - Round 4, Client 3 training completed. Accuracy: 0.8868, Time: 4.36s
+2024-12-14 21:34:13,418 - INFO - Training client 4/5 in round 4
+2024-12-14 21:34:18,534 - INFO - Round 4, Client 4 training completed. Accuracy: 0.9019, Time: 4.46s
+2024-12-14 21:34:18,534 - INFO - Training client 5/5 in round 4
+2024-12-14 21:34:23,670 - INFO - Round 4, Client 5 training completed. Accuracy: 0.8703, Time: 4.46s
+2024-12-14 21:34:23,670 - INFO - Aggregating models for round 4
+2024-12-14 21:34:24,219 - INFO - Round 4 completed. Global accuracy: 0.9233, Time: 26.03s
+2024-12-14 21:34:24,219 - INFO - 
+Starting round 5/10
+2024-12-14 21:34:24,219 - INFO - Training client 1/5 in round 5
+2024-12-14 21:34:29,462 - INFO - Round 5, Client 1 training completed. Accuracy: 0.9068, Time: 4.55s
+2024-12-14 21:34:29,462 - INFO - Training client 2/5 in round 5
+2024-12-14 21:34:35,131 - INFO - Round 5, Client 2 training completed. Accuracy: 0.9174, Time: 4.95s
+2024-12-14 21:34:35,131 - INFO - Training client 3/5 in round 5
+2024-12-14 21:34:40,182 - INFO - Round 5, Client 3 training completed. Accuracy: 0.9062, Time: 4.41s
+2024-12-14 21:34:40,182 - INFO - Training client 4/5 in round 5
+2024-12-14 21:34:45,150 - INFO - Round 5, Client 4 training completed. Accuracy: 0.9232, Time: 4.31s
+2024-12-14 21:34:45,150 - INFO - Training client 5/5 in round 5
+2024-12-14 21:34:50,077 - INFO - Round 5, Client 5 training completed. Accuracy: 0.9206, Time: 4.28s
+2024-12-14 21:34:50,078 - INFO - Aggregating models for round 5
+2024-12-14 21:34:50,606 - INFO - Round 5 completed. Global accuracy: 0.9267, Time: 26.39s
+2024-12-14 21:34:50,606 - INFO - 
+Starting round 6/10
+2024-12-14 21:34:50,606 - INFO - Simulating network partition...
+2024-12-14 21:34:51,111 - INFO - Network partition simulation completed: recovery_time=0.51s
+2024-12-14 21:34:51,112 - INFO - Training client 1/5 in round 6
+2024-12-14 21:34:55,886 - INFO - Round 6, Client 1 training completed. Accuracy: 0.9226, Time: 4.13s
+2024-12-14 21:34:55,886 - INFO - Training client 2/5 in round 6
+2024-12-14 21:35:00,762 - INFO - Round 6, Client 2 training completed. Accuracy: 0.9123, Time: 4.24s
+2024-12-14 21:35:00,762 - INFO - Training client 3/5 in round 6
+2024-12-14 21:35:05,633 - INFO - Round 6, Client 3 training completed. Accuracy: 0.8997, Time: 4.22s
+2024-12-14 21:35:05,633 - INFO - Training client 4/5 in round 6
+2024-12-14 21:35:10,534 - INFO - Round 6, Client 4 training completed. Accuracy: 0.9067, Time: 4.26s
+2024-12-14 21:35:10,534 - INFO - Training client 5/5 in round 6
+2024-12-14 21:35:15,406 - INFO - Round 6, Client 5 training completed. Accuracy: 0.9121, Time: 4.24s
+2024-12-14 21:35:15,406 - INFO - Aggregating models for round 6
+2024-12-14 21:35:15,942 - INFO - Round 6 completed. Global accuracy: 0.9239, Time: 25.33s
+2024-12-14 21:35:15,942 - INFO - 
+Starting round 7/10
+2024-12-14 21:35:15,942 - INFO - Training client 1/5 in round 7
+2024-12-14 21:35:20,850 - INFO - Round 7, Client 1 training completed. Accuracy: 0.9177, Time: 4.28s
+2024-12-14 21:35:20,850 - INFO - Training client 2/5 in round 7
+2024-12-14 21:35:25,704 - INFO - Round 7, Client 2 training completed. Accuracy: 0.9163, Time: 4.22s
+2024-12-14 21:35:25,705 - INFO - Training client 3/5 in round 7
+2024-12-14 21:35:30,615 - INFO - Round 7, Client 3 training completed. Accuracy: 0.8926, Time: 4.26s
+2024-12-14 21:35:30,615 - INFO - Training client 4/5 in round 7
+2024-12-14 21:35:35,549 - INFO - Round 7, Client 4 training completed. Accuracy: 0.8752, Time: 4.28s
+2024-12-14 21:35:35,549 - INFO - Training client 5/5 in round 7
+2024-12-14 21:35:40,453 - INFO - Round 7, Client 5 training completed. Accuracy: 0.8966, Time: 4.26s
+2024-12-14 21:35:40,453 - INFO - Aggregating models for round 7
+2024-12-14 21:35:40,985 - INFO - Round 7 completed. Global accuracy: 0.9286, Time: 25.04s
+2024-12-14 21:35:40,985 - INFO - 
+Starting round 8/10
+2024-12-14 21:35:40,985 - INFO - Training client 1/5 in round 8
+2024-12-14 21:35:45,857 - INFO - Round 8, Client 1 training completed. Accuracy: 0.9045, Time: 4.23s
+2024-12-14 21:35:45,857 - INFO - Training client 2/5 in round 8
+2024-12-14 21:35:50,760 - INFO - Round 8, Client 2 training completed. Accuracy: 0.9038, Time: 4.26s
+2024-12-14 21:35:50,760 - INFO - Training client 3/5 in round 8
+2024-12-14 21:35:55,736 - INFO - Round 8, Client 3 training completed. Accuracy: 0.9251, Time: 4.32s
+2024-12-14 21:35:55,736 - INFO - Training client 4/5 in round 8
+2024-12-14 21:36:00,651 - INFO - Round 8, Client 4 training completed. Accuracy: 0.9081, Time: 4.28s
+2024-12-14 21:36:00,651 - INFO - Training client 5/5 in round 8
+2024-12-14 21:36:05,606 - INFO - Round 8, Client 5 training completed. Accuracy: 0.8959, Time: 4.31s
+2024-12-14 21:36:05,606 - INFO - Aggregating models for round 8
+2024-12-14 21:36:06,147 - INFO - Round 8 completed. Global accuracy: 0.9247, Time: 25.16s
+2024-12-14 21:36:06,148 - INFO - 
+Starting round 9/10
+2024-12-14 21:36:06,148 - INFO - Training client 1/5 in round 9
+2024-12-14 21:36:11,084 - INFO - Round 9, Client 1 training completed. Accuracy: 0.9207, Time: 4.30s
+2024-12-14 21:36:11,084 - INFO - Training client 2/5 in round 9
+2024-12-14 21:36:15,889 - INFO - Round 9, Client 2 training completed. Accuracy: 0.9056, Time: 4.17s
+2024-12-14 21:36:15,889 - INFO - Training client 3/5 in round 9
+2024-12-14 21:36:20,741 - INFO - Round 9, Client 3 training completed. Accuracy: 0.9056, Time: 4.22s
+2024-12-14 21:36:20,741 - INFO - Training client 4/5 in round 9
+2024-12-14 21:36:25,567 - INFO - Round 9, Client 4 training completed. Accuracy: 0.9067, Time: 4.19s
+2024-12-14 21:36:25,568 - INFO - Training client 5/5 in round 9
+2024-12-14 21:36:30,414 - INFO - Round 9, Client 5 training completed. Accuracy: 0.9192, Time: 4.21s
+2024-12-14 21:36:30,414 - INFO - Aggregating models for round 9
+2024-12-14 21:36:30,934 - INFO - Round 9 completed. Global accuracy: 0.9258, Time: 24.79s
+2024-12-14 21:36:30,934 - INFO - 
+Starting round 10/10
+2024-12-14 21:36:30,934 - INFO - Training client 1/5 in round 10
+2024-12-14 21:36:35,785 - INFO - Round 10, Client 1 training completed. Accuracy: 0.9048, Time: 4.21s
+2024-12-14 21:36:35,785 - INFO - Training client 2/5 in round 10
+2024-12-14 21:36:40,667 - INFO - Round 10, Client 2 training completed. Accuracy: 0.9183, Time: 4.24s
+2024-12-14 21:36:40,667 - INFO - Training client 3/5 in round 10
+2024-12-14 21:36:45,478 - INFO - Round 10, Client 3 training completed. Accuracy: 0.9224, Time: 4.18s
+2024-12-14 21:36:45,479 - INFO - Training client 4/5 in round 10
+2024-12-14 21:36:50,326 - INFO - Round 10, Client 4 training completed. Accuracy: 0.9064, Time: 4.21s
+2024-12-14 21:36:50,326 - INFO - Training client 5/5 in round 10
+2024-12-14 21:36:55,183 - INFO - Round 10, Client 5 training completed. Accuracy: 0.8765, Time: 4.21s
+2024-12-14 21:36:55,183 - INFO - Aggregating models for round 10
+2024-12-14 21:36:55,712 - INFO - Round 10 completed. Global accuracy: 0.9204, Time: 24.78s
+2024-12-14 21:36:55,713 - INFO - Experiment with dp_fedavg completed successfully
+2024-12-14 21:36:55,713 - INFO - Total training time: 257.51s
+2024-12-14 21:36:55,713 - INFO - Final accuracy: 0.9204
+2024-12-14 21:36:55,715 - INFO - Completed experiment with dp_fedavg
+2024-12-14 21:36:58,188 - WARNING - No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+2024-12-14 21:36:59,444 - INFO - All experiments completed successfully

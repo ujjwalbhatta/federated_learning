@@ -1,3 +1,4 @@
+from src.utils.distributed_metrics import UnifiedMetricsCollector
 import torch
 import logging
 from datetime import datetime
@@ -7,7 +8,6 @@ import time
 from src.models.mnist_model import MNISTModel
 from src.clients.federated_client import FederatedClient
 from src.utils.data_loader import load_mnist_data
-from src.utils.distributed_metrics import DistributedMetricsCollector
 from src.utils.visualization_utils import generate_visualizations
 from src.algorithms.fedavg import FedAvg
 from src.algorithms.fedprox import FedProx
@@ -28,7 +28,7 @@ def setup_logging():
     )
 
 def run_experiment(algorithm_name: str, config: dict):
-    metrics_collector = DistributedMetricsCollector(config['num_clients'])
+    metrics_collector = UnifiedMetricsCollector(config['num_clients'])
     device = torch.device(config['device'])
     
     logging.info(f"Initializing experiment with {algorithm_name}")
@@ -45,6 +45,14 @@ def run_experiment(algorithm_name: str, config: dict):
         algorithm = CyclicWeightTransfer(global_model, device)
     elif algorithm_name == 'dp_fedavg':
         algorithm = DPFedAvg(global_model, device, epsilon=config.get('epsilon', 5.0))
+    
+    # Test scalability
+    logging.info("Testing scalability...")
+    try:
+        scalability_results = metrics_collector.evaluate_scalability([2, 3, 5])
+        logging.info(f"Scalability testing completed: {len(scalability_results)} configurations tested")
+    except Exception as e:
+        logging.error(f"Error during scalability testing: {str(e)}")
     
     # Load data
     logging.info("Loading and preparing data")
@@ -65,79 +73,97 @@ def run_experiment(algorithm_name: str, config: dict):
     ]
     logging.info(f"Initialized {len(clients)} clients successfully")
     
-    results = {
-        'algorithm': algorithm_name,
-        'rounds': [],
-        'final_accuracy': 0,
-        'training_time': 0,
-        'system_metrics': {}
-    }
-    
     start_time = datetime.now()
     
+    # Training rounds
     for round_num in range(config['num_rounds']):
         round_start_time = time.time()
         logging.info(f"\nStarting round {round_num + 1}/{config['num_rounds']}")
         client_states = []
         round_accuracies = []
         
+        # Simulate network partition in middle rounds
+        if round_num == config['num_rounds'] // 2:
+            try:
+                logging.info("Simulating network partition...")
+                partition_metrics = metrics_collector.simulate_network_partition()
+                logging.info(f"Network partition simulation completed: recovery_time={partition_metrics['recovery_time']:.2f}s")
+            except Exception as e:
+                logging.error(f"Error during network partition simulation: {str(e)}")
+
+        # Train each client
         for client_id, (client, loader) in enumerate(zip(clients, client_loaders)):
             logging.info(f"Training client {client_id + 1}/{config['num_clients']} in round {round_num + 1}")
             
             try:
-                # Train client
+                # Load current global model weights
                 client.model.load_state_dict(algorithm.model.state_dict())
+                
+                # Train client
+                client_start_time = time.time()
                 training_result = client.train(loader)
+                training_time = time.time() - client_start_time
+                
                 client_states.append(training_result)
                 
                 # Evaluate client model
                 metrics = client.evaluate(loader)
                 round_accuracies.append(metrics['accuracy'])
+                
                 logging.info(f"Round {round_num + 1}, Client {client_id + 1} training completed. "
-                           f"Accuracy: {metrics['accuracy']:.4f}")
-            
+                           f"Accuracy: {metrics['accuracy']:.4f}, Time: {training_time:.2f}s")
+                
             except Exception as e:
                 logging.error(f"Error training client {client_id + 1}: {str(e)}")
                 logging.error("Stack trace:", exc_info=True)
+                
+                # Analyze fault tolerance on failure
+                try:
+                    fault_metrics = metrics_collector.analyze_fault_tolerance()
+                except Exception as fault_e:
+                    logging.error(f"Error analyzing fault tolerance: {str(fault_e)}")
                 continue
         
+        # Aggregate models and evaluate
         try:
             logging.info(f"Aggregating models for round {round_num + 1}")
+            
+            # Aggregate models
             algorithm.aggregate(client_states)
             
             # Evaluate global model
             global_accuracy = evaluate_model(algorithm.model, test_loader, device)
-            logging.info(f"Round {round_num + 1} completed. Global accuracy: {global_accuracy:.4f}")
+            round_time = time.time() - round_start_time
             
-            # Collect metrics
+            avg_client_accuracy = sum(round_accuracies) / len(round_accuracies)
+            
+            # Collect comprehensive metrics
             metrics_collector.collect_round_metrics(
                 round_num + 1,
                 global_accuracy,
-                round_start_time
+                round_start_time,
+                client_states=[state['model_state'] for state in client_states]
             )
             
-            results['rounds'].append({
-                'round': round_num + 1,
-                'global_accuracy': global_accuracy,
-                'avg_client_accuracy': sum(round_accuracies) / len(round_accuracies),
-                'round_time': time.time() - round_start_time
-            })
+            logging.info(f"Round {round_num + 1} completed. "
+                        f"Global accuracy: {global_accuracy:.4f}, "
+                        f"Time: {round_time:.2f}s")
             
         except Exception as e:
             logging.error(f"Error in round {round_num + 1}: {str(e)}")
             logging.error("Stack trace:", exc_info=True)
             continue
     
+    # Save consolidated metrics
     metrics_collector.save_metrics(algorithm_name)
     
-    results['final_accuracy'] = global_accuracy
-    results['training_time'] = (datetime.now() - start_time).total_seconds()
-    results['system_metrics'] = metrics_collector.get_summary_metrics()
-    
-    save_results(results, algorithm_name)
     logging.info(f"Experiment with {algorithm_name} completed successfully")
+    logging.info(f"Total training time: {(datetime.now() - start_time).total_seconds():.2f}s")
+    logging.info(f"Final accuracy: {global_accuracy:.4f}")
     
-    return results
+    # Load and return the saved metrics for visualization
+    with open(f'results/{algorithm_name}_unified_metrics.json', 'r') as f:
+        return json.load(f)
 
 def evaluate_model(model, test_loader, device):
     model.eval()
@@ -151,11 +177,6 @@ def evaluate_model(model, test_loader, device):
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
     return correct / total
-
-def save_results(results, algorithm_name):
-    os.makedirs('results', exist_ok=True)
-    with open(f'results/{algorithm_name}_results.json', 'w') as f:
-        json.dump(results, f, indent=4)
 
 def main():
     try:
